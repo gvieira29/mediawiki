@@ -11,7 +11,7 @@ Para fazer a instalação da Wiki, vamos configurar um servidor web (caso não t
   # apt install -y lamp-server^
   ```
 - Instalar o apache.  
-  ```bash
+  ```
   # apt install -y apache2
   ```
   Pronto, o apache esta instalado.  

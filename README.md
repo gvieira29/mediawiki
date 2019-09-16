@@ -37,8 +37,23 @@ Para fazer a instalação da Wiki, vamos configurar um servidor web (caso não t
   ```
   # apt install -y mysql-client mysql-server php-mysql
   ```
-  Com o MySQL Instalado, crie o primeiro banco, abra o MySQL:
+  Com o MySQL Instalado, abra com o comando:
   ```
   # mysql
   ```
-  Para verificar 
+  Para verificar se esta rodaando normalmente, digite o comando
+  ```
+  SHOW DATABASES;
+  ```
+  - Crie um novo banco:
+    ```
+    CREATE DATABASE bancowiki;
+    ```
+    Para deletar um banco, utilize:
+    ```
+    DROP DATABASE bancowiki;
+    ```
+  - Crie um usuario e senha para seu banco:
+    ```
+    CREATE
+    ```

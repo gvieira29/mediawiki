@@ -1,8 +1,9 @@
 # INSTALAÇÃO DO MEDIAWIKI
 
-O MediaWiki é um modelo de Wiki OpenSource
+O MediaWiki é um modelo de Wiki OpenSource.
+Confira o [Site Oficial](https://www.mediawiki.org/wiki/MediaWiki).
 
-## MONTANDO SERVIDOR WEB
+## Montando um Servidor Web
 
 **Para fazer a instalação da Wiki, vamos configurar um servidor web (caso não tenha ainda). Siga estas etapas:**  
 
@@ -55,15 +56,21 @@ O MediaWiki é um modelo de Wiki OpenSource
     ```
   - **Crie um usuario e senha para seu banco:**
     ```
-    CREATE USER 'gabriel'@'localhost' IDENTIFIED BY 'senha1234';
+    CREATE USER 'usuario1234'@'localhost' IDENTIFIED BY 'senha1234';
     ```
   - **De as permissoes para o usuario:**
     ```
-    GRANT ALL PRIVILEGES ON *.* TO 'gabriel'@'localhost' WITH GRANT OPTION;
+    GRANT ALL PRIVILEGES ON *.* TO 'usuario1234'@'localhost' WITH GRANT OPTION;
     ```
   - **Rode o comando para atualizar:**
     ```
     FLUSH PRIVILEGES;
     ```
 - **Instalar o *PHPMYADMIN***
-  
+  ```
+  # apt install -y phpmyadmin
+  ```
+  Durante o processo, ira perguntar qual servidor deseja usar para executar o ***phpmyadmin***, selecione o **apache2** marcando com a tecla **ESPAÇO**, usando a tecla **TAB** mova o cursor para o **OK**. Confirme com **Sim**.  
+  O ***phpmyadmin*** deve estar funcionando, para testar vá até o navegador e acesse **localhost/phpmyadmin** ou **127.0.0.1/phpmyadmin**, para fazer login, utilize usuario e senha cadastrado no **MySQL** que criamos no passo anterior.
+
+## Instalação do MediaWiki
